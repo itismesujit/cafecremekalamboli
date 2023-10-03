@@ -1,0 +1,51 @@
+<div style="display: flex;">
+  <mat-list role="list" id="list" (click)="itemClick($event)">
+    <mat-list-item role="listitem" data-id="kuka">KUKA </mat-list-item>
+    <mat-divider></mat-divider>
+    <mat-list-item role="listitem" data-id="kukaExclusive">EXCLUSIVE </mat-list-item>
+    <mat-divider></mat-divider>
+    <mat-list-item role="listitem" data-id="cremeShakesMastani">MASTAN</mat-list-item>
+    <mat-divider></mat-divider>
+    <mat-list-item role="listitem" data-id="cremeShakes">SHAKES </mat-list-item>
+    <mat-divider></mat-divider>
+    <mat-list-item role="listitem" data-id="junket">SUNDAE) </mat-list-item>
+    <mat-divider></mat-divider>
+    <mat-list-item role="listitem" data-id="thunders">CREAMS) </mat-list-item>
+    <mat-divider></mat-divider>
+    <mat-list-item role="listitem" data-id="chocExclusive">EXCLUSIVE </mat-list-item>
+    <mat-divider></mat-divider>
+    <mat-list-item role="listitem" data-id="chocoCremes">CRÉMES </mat-list-item>
+    <mat-divider></mat-divider>
+    <mat-list-item role="listitem" data-id="snacks">SNACKS </mat-list-item>
+    <mat-divider></mat-divider>
+    <mat-list-item role="listitem" data-id="hot">HOT </mat-list-item>
+    <mat-divider></mat-divider>
+    <mat-list-item role="listitem" data-id="sandwiches">SANDWICHES </mat-list-item>
+  </mat-list>
+
+  <div>
+    <section id="list-img">
+      <img [src]="imgDir + '1.jpg'" alt="" id="kuka">
+      <img [src]="imgDir + '2.jpg'" alt="" id="kukaExclusive">
+      <img [src]="imgDir + '3.jpg'" alt="" id="cremeShakes">
+      <img [src]="imgDir + '4.jpg'" alt="" id="mastani">
+      <img [src]="imgDir + '5.jpg'" alt="" id="cremeShakes">
+      <img [src]="imgDir + '6.jpg'" alt="" id="junket">
+      <img [src]="imgDir + '7.jpg'" alt="" id="thunders">
+      <img [src]="imgDir + '8.jpg'" alt="" id="chocExclusive">
+      <img [src]="imgDir + '9.jpg'" alt="" id="chocoCremes">
+      <img [src]="imgDir + '10.jpg'" alt="" id="snacks">
+      <img [src]="imgDir + '11.jpg'" alt="" id="hot">
+      <img [src]="imgDir + '12.jpg'" alt="" id="sandwiches">
+    </section>
+    <section id="list-details">
+      <h2>{{header}}</h2>
+      <h4>{{paragraph}}</h4>
+    </section>
+  </div>
+  <section>
+    <mat-list role="list" *ngFor="let subMenuItem of subMenu">
+      <mat-list-item role="listitem">{{subMenuItem}}</mat-list-item>
+    </mat-list>
+  </section>
+</div>
