@@ -1,13 +1,23 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+.example-container {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #eee;
 }
 
-html {
-  scroll-behavior: smooth;
-}
 
-#list-img > img {
-  display: none;
-}
+// * {
+//   margin: 0;
+//   padding: 0;
+//   box-sizing: border-box;
+// }
+
+// html {
+//   scroll-behavior: smooth;
+// }
+
+// #list-img > img {
+//   display: none;
+// }
