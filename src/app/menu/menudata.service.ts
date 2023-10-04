@@ -9,17 +9,17 @@ export class MenudataService {
   
   getMenuList() {
     return [
-      { linkTitle: 'KUKA', id: 'kuka', link: '/kuka'},
-      { linkTitle: 'EXCLUSIVE', id: 'kukaExclusive', link: '/kukaExclusive'},
-      { linkTitle: 'MASTAN', id: 'cremeShakesMastani', link: '/cremeShakesMastani'},
-      { linkTitle: 'SHAKES', id: 'cremeShakes', link: '/cremeShakes'},
-      { linkTitle: 'SUNDAE', id: 'junket', link: '/junket'},
-      { linkTitle: 'CREAMS', id: 'thunders', link: '/thunders'},
-      { linkTitle: 'EXCLUSIVE', id: 'chocExclusive', link: '/chocExclusive'},
-      { linkTitle: 'CRÉMES', id: 'chocoCremes', link: '/chocoCremes'},
-      { linkTitle: 'SNACKS', id: 'snacks', link: '/snacks'},
-      { linkTitle: 'HOT', id: 'hot', link: '/hot'},
-      { linkTitle: 'SANDWICHES', id: 'sandwiches', link: '/sandwiches'},
+      { imgDir: '../../assets/1.jpg' , linkTitle: 'KUKA', id: 'kuka', link: '/kuka'},
+      { imgDir: '../../assets/2.jpg' , linkTitle: 'EXCLUSIVE', id: 'kukaExclusive', link: '/kukaExclusive'},
+      { imgDir: '../../assets/3.jpg' , linkTitle: 'MASTAN', id: 'cremeShakesMastani', link: '/cremeShakesMastani'},
+      { imgDir: '../../assets/4.jpg' , linkTitle: 'SHAKES', id: 'cremeShakes', link: '/cremeShakes'},
+      { imgDir: '../../assets/5.jpg' , linkTitle: 'SUNDAE', id: 'junket', link: '/junket'},
+      { imgDir: '../../assets/6.jpg' , linkTitle: 'CREAMS', id: 'thunders', link: '/thunders'},
+      { imgDir: '../../assets/7.jpg' , linkTitle: 'EXCLUSIVE', id: 'chocExclusive', link: '/chocExclusive'},
+      { imgDir: '../../assets/8.jpg' , linkTitle: 'CRÉMES', id: 'chocoCremes', link: '/chocoCremes'},
+      { imgDir: '../../assets/9.jpg' , linkTitle: 'SNACKS', id: 'snacks', link: '/snacks'},
+      { imgDir: '../../assets/10.jpg' , linkTitle: 'HOT', id: 'hot', link: '/hot'},
+      { imgDir: '../../assets/11.jpg' , linkTitle: 'SANDWICHES', id: 'sandwiches', link: '/sandwiches'},
     ]
   }
 

@@ -9,16 +9,16 @@ import { MenudataService } from './menudata.service';
 })
 export class MenuComponent implements OnInit, AfterViewInit {
   // @ViewChild('myDiv') myDiv: ElementRef;
-  menuList:any = [];
-  menuData:any = [];
-  imgUrlParent:any = '';
+  menuList: any = [];
+  menuData: any = [];
+  imgUrlParent: any = '';
 
 
   constructor(
-    private _menudataService: MenudataService 
-  ){}
+    private _menudataService: MenudataService
+  ) { }
 
-  ngOnInit(){
+  ngOnInit() {
     this.menuData = this._menudataService.getMenuData();
     this.menuList = this._menudataService.getMenuList();
   }
@@ -28,7 +28,7 @@ export class MenuComponent implements OnInit, AfterViewInit {
   }
 
 
- 
+
 
   subMenu: any = [];
   header: any = '';
@@ -37,14 +37,18 @@ export class MenuComponent implements OnInit, AfterViewInit {
   oldElem: any = '';
   imgDir: any = '../../assets/';
 
-    handleClick(selectedItem:any) {
-      const val = this.menuData[selectedItem.id];
-      console.log({selectedItem});
-      console.log({val});
+  handleClick(selectedItem: any) {
+    const val = this.menuData[selectedItem.id];
 
+    this.subMenu = val.subMenu;
+    this.header = val.header;
+    this.paragraph = val.paragraph;
 
-      this.subMenu = val.subMenu;
-      this.header = val.header;
-      this.paragraph = val.paragraph;
+    this.imgUrlParent = {
+      submenu: this.subMenu,
+      header: this.header,
+      paragraph: this.paragraph,
+      imgDir: this.imgDir
     }
+  }
 }
