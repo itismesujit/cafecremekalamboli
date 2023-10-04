@@ -40,15 +40,17 @@ export class MenuComponent implements OnInit, AfterViewInit {
   handleClick(selectedItem: any) {
     const val = this.menuData[selectedItem.id];
 
-    this.subMenu = val.subMenu;
+    this.subMenu = val.submenu;
     this.header = val.header;
     this.paragraph = val.paragraph;
+
+    console.log(val)
 
     this.imgUrlParent = {
       submenu: this.subMenu,
       header: this.header,
       paragraph: this.paragraph,
-      imgDir: this.imgDir
+      imgDir: this.menuList.filter((obj: { id: any; }) => obj.id === selectedItem.id)[0].imgDir
     }
   }
 }
