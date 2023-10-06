@@ -1,0 +1,19 @@
+<mat-sidenav-container style="height: 100vh;">
+    <mat-sidenav #sidenav position="end" [opened]="toggles">
+        <ol>
+            <li >home</li>
+            <li>Action</li>
+            <li>logoff</li>
+        </ol>
+    </mat-sidenav>
+    <mat-sidenav-content>
+        <button (click)="sidenav.open()">open</button>
+        <button (click)="sidenav.close()">close</button>
+        <button (click)="sidenav.toggle()">toggle</button>
+        <button (click)="info(sidenav)">getwidth</button>
+
+
+
+    </mat-sidenav-content>
+    <!-- <section (click)="onOff()">Main</section> -->
+</mat-sidenav-container>
