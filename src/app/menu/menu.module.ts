@@ -10,6 +10,7 @@ import { RouterModule} from '@angular/router';
 import { MenudataService } from './menudata.service';
 import { MenuRoutingModule } from './menu-routing.module';
 import {MatIconModule} from '@angular/material/icon';
+import {MatCardModule} from '@angular/material/card';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import {MatIconModule} from '@angular/material/icon';
     MatListModule,
     MatDividerModule,
     MatSidenavModule,
-    MatIconModule
+    MatIconModule,
+    MatCardModule
   ],
   providers: [MenudataService]
 })

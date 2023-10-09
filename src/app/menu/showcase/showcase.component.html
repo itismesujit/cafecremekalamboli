@@ -1,4 +1,4 @@
-<section style="display: flex;" id="main">
+<!-- <section style="display: flex;" id="main">
 <div>
     <section id="list-img">
       <img src="{{imgUrlChild?.imgDir}}" alt="">
@@ -9,4 +9,11 @@
     </section>
 </div>
 <app-submenu [subMenu]="imgUrlChild.submenu"></app-submenu>
+</section> -->
+
+
+<section>
+  {{imgUrlChild | json}}2
+<app-submenu [subMenu]="imgUrlChild.submenu"></app-submenu>
 </section>
+

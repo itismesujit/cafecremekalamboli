@@ -11,7 +11,7 @@ export class MenuComponent implements OnInit, AfterViewInit {
   // @ViewChild('myDiv') myDiv: ElementRef;
   menuList: any = [];
   menuData: any = [];
-  imgUrlParent: any = '';
+  imgUrlParent: any = 'default value';
 
 
   constructor(

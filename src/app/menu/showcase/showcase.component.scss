@@ -1,9 +1,7 @@
-img {
-    width: 400px;
-    height: 500px;
-    object-fit: contain
+section {
+  background-color: antiquewhite;
+  padding: 5rem 0 0 0;
+
+  flex-grow: 4;
 }
 
-#main {
-    width: 400px;
-}
