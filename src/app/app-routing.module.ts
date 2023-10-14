@@ -11,7 +11,7 @@ const routes: Routes = [
   { path: 'admin', component: AdminComponent},
   { path: 'menu', component: MenuComponent },
   { path: 'test', component: TestComponent },
-  { path: '', redirectTo: '/test' , pathMatch:'full'},
+  { path: '', redirectTo: '/menu' , pathMatch:'full'},
   { path: '**', component: NotFoundComponent}
 ];
 
