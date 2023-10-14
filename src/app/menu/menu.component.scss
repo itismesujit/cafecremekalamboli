@@ -24,6 +24,7 @@ main {
     padding: 3rem 0 0.3rem;
     color: red;
     font-weight: 400;
+    font-family: cursive;
   }
 
   h2 {
@@ -73,4 +74,8 @@ mat-panel-title {
 mat-panel-description {
   font-family: 'Josefin Sans';
   font-weight: 400;
+}
+
+mat-expansion-panel-header {
+  height: 4.8rem;
 }
