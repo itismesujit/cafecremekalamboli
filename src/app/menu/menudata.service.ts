@@ -302,7 +302,7 @@ export class MenudataService {
         { name: 'Chicken nuggets', price: 200 }
       ],
 
-      'maggi': [
+      'Maggi': [
         { name: 'Masala maggi', price: 80 },
         { name: 'Masala cheese maggi', price: 100 }
       ],
