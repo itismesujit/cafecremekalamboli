@@ -1,189 +1,76 @@
-// div {
-//   border: 1px solid black;
-//   display: flex;
-//   height: 400px;
-// }
-
-// section {
-//   background-color: azure;
-// }
-
-// div > section {
-//   flex: 2;
-// }
-
-// div > div {
-//   flex: 8;
-// }
-
-// // section:nth-child(2) {
-// //   background-color: antiquewhite;
-// //   flex-grow: 4;
-// // }
-
-// // section:last-child {
-// //   background-color: burlywood;
-// //   flex-grow: 2;
-// // }
-
-// @media only screen and (max-width: 600px) {
-//   body>div {
-//     display: block;
-//   }
-// }
-
-// #card {
-//   width: 300px;
-// }
-
-
-*{
+* {
+  margin: 0;
   padding: 0;
-  margin: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-
+  box-sizing: border-box;
 }
-.card-container {
-  background: url(../../assets/bg.jpg) no-repeat center center fixed; 
-  background-size: cover;
-  height: 100vh;
-  // position: relative;
+
+main {
+  background-color: #e8e4de;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr) );
-  grid-auto-rows: 400;
-  // grid-gap: 1rem;
+  place-items: center;
+  min-height: 100vh;
+  padding: 2rem;
 }
 
-
-.card{
-  height: 400px;
-  width: 320px;
-  background-color: rgba(255, 255, 255, 0.06);
-  -webkit-backdrop-filter: blur(20px);
-          backdrop-filter: blur(20px);
-  // position: absolute;
-   margin: auto;
-  left: 0;
-  right: 0;
-  top: 0;
-  bottom: 0;
-  border-radius: 8px;
-  -webkit-box-shadow: 20px 20px 22px rgba(0,0,0,0.2);
-          box-shadow: 20px 20px 22px rgba(0,0,0,0.2);
-  font-family: 'Poppins',sans-serif;
-}
-.card-img{
-  height: 240px;
-  width: 240px;
-  background-color: rgba(255, 255, 255, 0.06);
-  -webkit-backdrop-filter: blur(20px);
-          backdrop-filter: blur(20px);
-  border-radius: 50%;
-  position: absolute;
-  margin: 30px auto 20px  auto;
-  left: 0;
-  right: 0;
-  position: relative;
-  top: -7rem;
-
-}
-.card-img img{
-  height: 86%;
-  border-radius: 50%;
-  margin-left: 7%;
-  margin-top: 7%;
-  transition: all 0.3s;
-}
-.card-img img:hover{
- scale: 2;
- z-index: 100;
-}
-h6{
-  margin: 0;
-}
-.desc{
+.container {
+  background-color: white;
   width: 100%;
-  text-align: center;
-  position: absolute;
-  top: 160px;
+  border-radius: 0.6rem;
+  padding: 4vw;
 }
-.primary-text{
-  color: #d5d5d5;
-  font-size: 16px;
-  font-weight: 600;
-  letter-spacing: 0.7px;
-  margin: 5px 0;
-}
-.secondary-text{
-  color: #c0c0c0;
-  font-weight: 400;
-  font-size: 14px;
-  letter-spacing: 1px;
-  margin: 5px 0;
-}
-button{
-  background-color: rgba(255, 255, 255, 0.06);
-  -webkit-backdrop-filter: blur(20px);
-          backdrop-filter: blur(20px);
-  border: none;
 
+#head-up {
+  h4 {
+    padding: 3rem 0 0.3rem;
+    color: red;
+    font-weight: 400;
+  }
+
+  h2 {
+    margin-bottom: 1rem;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 2rem;
+  }
 }
-.details{
-  display: -ms-grid;
-  display: grid;
-  width: 100%;
-  height: 70px;
-  padding: 5px 0;
-  -ms-grid-columns: auto auto;
-  grid-template-columns: auto auto;
-  background-color: rgba(255, 255, 255, 0.06);
-  -webkit-backdrop-filter: blur(20px);
-          backdrop-filter: blur(20px);
-  position: absolute;
-  bottom: 0;
-  border-radius: 0 0 8px 8px;
+
+.mat-mdc-form-field+.mat-mdc-form-field {
+  margin-left: 8px;
 }
-.details>div{
+
+#menu-details-list {
+  display: flex;
+  flex-flow: column wrap;
+}
+
+.menu-details {
+  display: flex;
+  justify-content: space-between;
+  max-width: 400px;
+  padding: 0.4rem 0;
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 300;
+  font-size: 1.2rem;
+  transition: all 0.2s;
+}
+
+.menu-details:hover {
+  background: aliceblue;
+  padding: 1rem;
+  border-radius: 0.4rem;
+  transform: scale(1.1);
+}
+
+.text-center {
   text-align: center;
 }
-.details>div:first-child{
-  border-right: 2px solid rgba(255,255,255,0.08);
-}
-button{
-  width: 80%;
-  padding: 15px 0;
-  position: absolute;
-  left: 10%;
-  top: 240px;
-  border-radius: 5px;
-  outline: none;
-}
-a{
-  color: #ffffff;
-  font-family: "Poppins",sans-serif;
+
+mat-panel-title {
+  font-family: 'Josefin Sans', sans-serif;
   font-weight: 400;
-  letter-spacing: 0.5px;
-  position:absolute;
-  right:20px ;
-  top:20px;
-  border:3px solid #ffffff;
-  border-radius: 5px;
-  text-decoration:none;
-}
-a>.fa{
-color: #FF0000;
-}
-@media screen and (min-width: 451px) {
-a{
-  font-size: 18px;
-   padding:8px 12px 8px 12px;
-}
+  font-size: 1.3rem;
 }
 
-@media screen and (max-width: 450px) {
-a{
-  font-size: 12px;
-   padding:5px 8px 5px 8px;
+mat-panel-description {
+  font-family: 'Josefin Sans';
+  font-weight: 400;
 }
-} 
