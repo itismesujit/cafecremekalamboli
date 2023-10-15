@@ -4,12 +4,19 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 main {
   background-color: #e8e4de;
   display: grid;
   place-items: center;
   min-height: 100vh;
   padding: 2rem;
+  @media only screen and (max-width: 600px) {
+    padding: 0;
+  }
 }
 
 .container {

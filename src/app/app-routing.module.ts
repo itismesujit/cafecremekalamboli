@@ -8,11 +8,11 @@ import { TestComponent } from './test/test.component';
 
 const routes: Routes = [
   { path: 'home', component: HomeComponent },
-  { path: 'admin', component: AdminComponent},
+  // { path: 'admin', component: AdminComponent },
   { path: 'menu', component: MenuComponent },
-  { path: 'test', component: TestComponent },
-  { path: '', redirectTo: '/menu' , pathMatch:'full'},
-  { path: '**', component: NotFoundComponent}
+  // { path: 'test', component: TestComponent },
+  { path: '', redirectTo: '/menu', pathMatch: 'full' },
+  { path: '**', component: NotFoundComponent }
 ];
 
 @NgModule({
