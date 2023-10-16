@@ -7,16 +7,16 @@ import { AdminComponent } from './admin/admin.component';
 import { TestComponent } from './test/test.component';
 
 const routes: Routes = [
+  { path: 'admin', component: AdminComponent },
+  { path: 'test', component: TestComponent },
   { path: 'home', component: HomeComponent },
-  // { path: 'admin', component: AdminComponent },
   { path: 'menu', component: MenuComponent },
-  // { path: 'test', component: TestComponent },
-  { path: '', redirectTo: '/menu', pathMatch: 'full' },
+  { path: '', redirectTo: 'menu', pathMatch: 'full' },
   { path: '**', component: NotFoundComponent }
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
+  imports: [RouterModule.forRoot(routes, { useHash: false })],
   exports: [RouterModule]
 })
 export class AppRoutingModule { }

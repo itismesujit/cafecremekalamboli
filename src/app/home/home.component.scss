@@ -1,4 +1,28 @@
 main {
   background-color: #e8e4de;
-  height: 100vh;
+  padding: 1vw;
+}
+
+.container {
+  background-color: white;
+  min-height: 100vh;
+  padding: 2rem;
+}
+
+.row {
+  display: flex;
+}
+
+.top {
+  display: flex;
+  flex-wrap: wrap;
+
+  .left{
+    h1:first-child {
+      font-family: "Josefin Sans", sans-serif;
+      font-weight: 300;
+      line-height: 67px;
+      font-size: 3.5rem;
+    }
+  }
 }
